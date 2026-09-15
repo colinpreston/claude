@@ -36,9 +36,19 @@
 
 ## 4. Research Repository — shared across every desk
 
-`<ClientName>_Research_Repository.md` holds every research or data finding collected on this engagement, synthesized to a headline entry with a pointer back to the producing role's own log for full detail. Every desk checks it as standing context before starting new work, not just the Lead UX Researcher or Data & Insight Analyst.
+`<ClientName>_Research_Repository.md` holds every research or data finding collected on this engagement, synthesized to a headline entry with a pointer back to the producing role's own log for full detail. Structured in the same three zones as every desk's own log — see Section 5. Every desk checks its Active Notes and Digest as standing context before starting new work, not just the Lead UX Researcher or Data & Insight Analyst.
 
-## 5. Fences — always Colin's "send"
+## 5. Memory architecture — three zones, not one growing pile
+
+Every memory doc in this engagement — each desk's own log (Section 3) and the Research Repository (Section 4) — is written in three zones inside the same file, not as one endlessly-growing append-only stream:
+
+- **Active Notes** — what's open right now: unresolved items, the last session or two's work. Appended to as normal, most recent first; read by default before picking up new work.
+- **Digest** — standing facts and decisions that are still true but no longer "in flight." When something in Active Notes resolves, it collapses to one dense line here and the original moves to the Archive. Read alongside Active Notes as normal working context.
+- **Archive** — the complete, unedited original entries, kept forever for traceability. Not read by default — pulled only to trace exactly when and why something happened, or to settle a dispute about what was said.
+
+A desk picking up work reads this Brain, the Research Repository's Active Notes and Digest (not its Archive), and its own (plus any dependency desk's) Active Notes and Digest — never a full Archive to start a normal session. The Delivery Manager prunes: every status check (Section 7), it checks whether any desk's Active Notes has grown past a page or holds uncollapsed resolved items, and if so compresses it itself, saying so in its action list. See `SKILL.md` Step 6 for the full rationale.
+
+## 6. Fences — always Colin's "send"
 
 - Anything sent to the client (a deliverable going out, an email, a workshop invite)
 - Anything committing budget, scope, or timeline beyond what's already agreed above
@@ -47,15 +57,15 @@
 
 Everything else — drafting, research, synthesis, workshop planning, prototyping, internal analysis — can run ahead and comes back as send / edit / skip.
 
-## 6. How to actually use this
+## 7. How to actually use this
 
-Start a session in this project and either name a role directly ("as the Lead UX Researcher, draft the discussion guide") or just describe the job ("we need to plan the kickoff workshop") — Claude reads this doc plus the named role's brief to pick it up. Ask the Delivery Manager for a status check any time with something like "what's outstanding" or "give me the team update." If a new specialist turns out to be needed partway through, add a row above and write that role's brief the same way as the others.
+Start a session in this project and either name a role directly ("as the Lead UX Researcher, draft the discussion guide") or just describe the job ("we need to plan the kickoff workshop") — Claude reads this doc plus the named role's brief to pick it up, checking the Research Repository's Active Notes and Digest for anything already known first. Ask the Delivery Manager for a status check any time with something like "what's outstanding" or "give me the team update" — this also prunes any desk's log that's grown past a page of Active Notes (Section 5). If a new specialist turns out to be needed partway through, add a row above and write that role's brief the same way as the others.
 
-## 7. Skill sources — installed vs. recommended vs. pending Colin's install
+## 8. Skill sources — installed vs. recommended vs. pending Colin's install
 
 Every role's brief lists skills to check automatically. Note here which are already installed, which are recommended but not yet installed, which repo they'd come from, and what Colin said when asked.
 
-## 8. Log of changes to this brief
+## 9. Log of changes to this brief
 
 *Append here whenever the brief itself changes (scope, timeline, objectives) — this is the changelog Colin and every desk can check to see what's shifted since they last looked.*
 

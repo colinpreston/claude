@@ -1,6 +1,6 @@
 # design-studio-team-setup
 
-A Claude skill for Colin Preston. Sets up a "company brain + desks" pattern for a new design consultancy client engagement: one shared Project Brain, a roster of role "desks" each with a one-page brief and an append-only memory log, a shared project-level research repository, a visual desk-status dashboard, and a Colin send/edit/skip review gate.
+A Claude skill for Colin Preston. Sets up a "company brain + desks" pattern for a new design consultancy client engagement: one shared Project Brain, a roster of role "desks" each with a one-page brief and a memory log structured in three zones (Active Notes / Digest / Archive) so it stays usable as the engagement grows, a shared project-level research repository built the same way, a visual desk-status dashboard, and a Colin send/edit/skip review gate.
 
 Default roster: Lead UX Designer, Lead UX Researcher, Expert Workshop Facilitator, Product Consultant, Engineering Principal, QA & Definition Lead, Delivery Manager — plus whatever specialists a given engagement needs.
 
