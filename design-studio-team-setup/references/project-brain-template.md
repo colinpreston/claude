@@ -38,7 +38,7 @@
 
 `<ClientName>_Research_Repository.md` holds every research or data finding collected on this engagement, synthesized to a headline entry with a pointer back to the producing role's own log for full detail. Structured in the same three zones as every desk's own log — see Section 5. Every desk checks its Active Notes and Digest as standing context before starting new work, not just the Lead UX Researcher or Data & Insight Analyst.
 
-## 5. Memory architecture — three zones, not one growing pile
+## 5. Memory architecture — three zones, plus targeted retrieval for specific questions
 
 Every memory doc in this engagement — each desk's own log (Section 3) and the Research Repository (Section 4) — is written in three zones inside the same file, not as one endlessly-growing append-only stream:
 
@@ -46,7 +46,11 @@ Every memory doc in this engagement — each desk's own log (Section 3) and the 
 - **Digest** — standing facts and decisions that are still true but no longer "in flight." When something in Active Notes resolves, it collapses to one dense line here and the original moves to the Archive. Read alongside Active Notes as normal working context.
 - **Archive** — the complete, unedited original entries, kept forever for traceability. Not read by default — pulled only to trace exactly when and why something happened, or to settle a dispute about what was said.
 
-A desk picking up work reads this Brain, the Research Repository's Active Notes and Digest (not its Archive), and its own (plus any dependency desk's) Active Notes and Digest — never a full Archive to start a normal session. The Delivery Manager prunes: every status check (Section 7), it checks whether any desk's Active Notes has grown past a page or holds uncollapsed resolved items, and if so compresses it itself, saying so in its action list. See `SKILL.md` Step 6 for the full rationale.
+**Query routing (picking up new work):** a desk picking up work reads this Brain, the Research Repository's Active Notes and Digest (not its Archive), and its own (plus any dependency desk's) Active Notes and Digest — never a full Archive to start a normal session.
+
+**Retrieval (answering a specific question):** a direct question ("what did we decide about X," "what came out of that meeting") is a different mode, patterned on retrieval-augmented generation (RAG) — search first, answer only from what's found, and say where it came from. Search every memory doc that could plausibly hold the answer, including Archives, since a targeted question is exactly the case an Archive exists for. There's no vector database needed — the "retriever" is Claude reading the plain-text logs for matching entries; the "generator" is Claude answering only from what it found, naming the doc, zone, and date each answer came from so it can be checked against the source. If nothing matches, say so rather than guessing.
+
+The Delivery Manager prunes: every status check (Section 7), it checks whether any desk's Active Notes has grown past a page or holds uncollapsed resolved items, and if so compresses it itself, saying so in its action list. See `SKILL.md` Step 6 for the full rationale.
 
 ## 6. Fences — always Colin's "send"
 
