@@ -29,8 +29,12 @@
 | Product Consultant | Ties the work to product strategy and value | `<ClientName>_Product_Consultant_Brief.md` |
 | Engineering Principal | Sense-checks feasibility and delivery reality | `<ClientName>_Engineering_Principal_Brief.md` |
 | QA & Definition Lead | Turns approved design into user stories/acceptance criteria; checks build against them | `<ClientName>_QA_Definition_Lead_Brief.md` |
-| Delivery Manager | Coordinates the desks, tracks and actions gaps | `<ClientName>_Delivery_Manager_Brief.md` |
-| <Specialist role, if added> | <...> | `<ClientName>_<RoleName>_Brief.md` |
+| Content/UX Writer | Owns copy, microcopy, and tone of voice | `<ClientName>_Content_UX_Writer_Brief.md` |
+| Visual/Brand Designer | Owns visual identity, UI styling, and brand application | `<ClientName>_Visual_Brand_Designer_Brief.md` |
+| Data & Insight Analyst | Analytics and usage data that inform decisions | `<ClientName>_Data_Insight_Analyst_Brief.md` |
+| Meeting Notes Lead | Captures meeting transcripts/discussions, tracks open actions & requests, answers queries against past meetings | `<ClientName>_Meeting_Notes_Brief.md` |
+| Delivery Manager | Coordinates the desks, tracks and actions gaps, sequences new multi-desk work before it starts | `<ClientName>_Delivery_Manager_Brief.md` |
+| <Additional specialist role, if added> | <...> | `<ClientName>_<RoleName>_Brief.md` |
 
 **The Boss:** Colin Preston, Product & Service Design Director. Plans the program of work, sets priorities and phasing, gives final send/edit/skip — see the fences below.
 
@@ -45,6 +49,8 @@ Every memory doc in this engagement — each desk's own log (Section 3) and the 
 - **Active Notes** — what's open right now: unresolved items, the last session or two's work. Appended to as normal, most recent first; read by default before picking up new work.
 - **Digest** — standing facts and decisions that are still true but no longer "in flight." When something in Active Notes resolves, it collapses to one dense line here and the original moves to the Archive. Read alongside Active Notes as normal working context.
 - **Archive** — the complete, unedited original entries, kept forever for traceability. Not read by default — pulled only to trace exactly when and why something happened, or to settle a dispute about what was said.
+
+One desk is a deliberate exception to "not read by default": the Meeting Notes Lead's Archive is read routinely, because that desk's whole job is answering "what did we say/agree in that meeting" — its own log doubles as the meeting record. That's a specific case of retrieval mode (below), not a one-off.
 
 **Query routing (picking up new work):** a desk picking up work reads this Brain, the Research Repository's Active Notes and Digest (not its Archive), and its own (plus any dependency desk's) Active Notes and Digest — never a full Archive to start a normal session.
 
@@ -63,7 +69,7 @@ Everything else — drafting, research, synthesis, workshop planning, prototypin
 
 ## 7. How to actually use this
 
-Start a session in this project and either name a role directly ("as the Lead UX Researcher, draft the discussion guide") or just describe the job ("we need to plan the kickoff workshop") — Claude reads this doc plus the named role's brief to pick it up, checking the Research Repository's Active Notes and Digest for anything already known first. Ask the Delivery Manager for a status check any time with something like "what's outstanding" or "give me the team update" — this also prunes any desk's log that's grown past a page of Active Notes (Section 5). If a new specialist turns out to be needed partway through, add a row above and write that role's brief the same way as the others.
+Start a session in this project and either name a role directly ("as the Lead UX Researcher, draft the discussion guide") or just describe the job ("we need to plan the kickoff workshop") — Claude reads this doc plus the named role's brief to pick it up, checking the Research Repository's Active Notes and Digest for anything already known first. For a new job that plainly needs more than one desk, hand it to the Delivery Manager first rather than guessing which role to name — it reads the roster's "Collaborates with" arrows and produces a short sequenced plan (who's needed, in what order, what each hands off) before any desk actually starts, and that plan comes back as send/edit/skip like anything else. For a specific question instead of a job to pick up — "what did we decide about X," "what came out of that meeting" — a desk switches into retrieval mode instead (Section 5): it searches every relevant log, including Archives, and answers only from what it finds, naming the doc, zone, and date each answer came from. Ask the Delivery Manager for a status check any time with something like "what's outstanding" or "give me the team update" — this also prunes any desk's log that's grown past a page of Active Notes (Section 5). Hand a meeting transcript or notes to the Meeting Notes Lead any time to get it logged, and ask it directly what was said or agreed in a past meeting. If a new specialist turns out to be needed partway through, add a row above and write that role's brief the same way as the others.
 
 ## 8. Skill sources — installed vs. recommended vs. pending Colin's install
 
