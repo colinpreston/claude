@@ -79,6 +79,8 @@ Start a session in this project and either name a role directly ("as the Lead UX
 
 Every role's brief lists skills to check automatically. Note here which are already installed, which are recommended but not yet installed, which repo they'd come from, and what Colin said when asked.
 
+**Always-on studio skill:** `code-design-playbook` (Code's internal design team curriculum) ships bundled with this plugin and is standing context for every design-facing desk on this roster — not a per-role recommendation to track here.
+
 ## 9. Log of changes to this brief
 
 *Append here whenever the brief itself changes (scope, timeline, objectives) — this is the changelog Colin and every desk can check to see what's shifted since they last looked.*
